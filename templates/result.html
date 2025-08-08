@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - Math Calculator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-menu">
+            <a href="/calculator">Calculator</a>
+            <a href="/result" class="active">Last Result</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+        
+        <div class="user-info"></div>
+        
+        <h2>Calculation Result</h2>
+        
+        <div class="result" id="resultContainer">
+            <p>Loading result...</p>
+        </div>
+        
+        <button onclick="window.location.href='/calculator'">New Calculation</button>
+    </div>
+    
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/calculator.js"></script>
+</body>
+</html>

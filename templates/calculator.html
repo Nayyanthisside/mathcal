@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - Math Calculator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-menu">
+            <a href="/calculator" class="active">Calculator</a>
+            <a href="/result">Last Result</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+        
+        <div class="user-info"></div>
+        
+        <h2>Math Calculator</h2>
+        
+        <form id="calculatorForm">
+            <div class="form-group">
+                <label for="num1">First Number:</label>
+                <input type="number" id="num1" name="num1" step="any" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="operation">Operation:</label>
+                <select id="operation" name="operation" required>
+                    <option value="">Select Operation</option>
+                    <option value="add">Addition (+)</option>
+                    <option value="subtract">Subtraction (-)</option>
+                    <option value="multiply">Multiplication (×)</option>
+                    <option value="divide">Division (÷)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="num2">Second Number:</label>
+                <input type="number" id="num2" name="num2" step="any" required>
+            </div>
+            
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+    
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/calculator.js"></script>
+</body>
+</html>
